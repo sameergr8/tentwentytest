@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-menu-content">
+            <div id="left-side-menu-content" class="left-side-menu-content">
+                <ul class="non-list-type">
+                    <li class="menu-items-li">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="menu-items-li">
+                        <a href="#">News</a>
+                    </li>
+                    <li class="menu-items-li">
+                        <a href="#">Services</a>
+                    </li>
+                    <li class="menu-items-li">
+                        <a href="#">Our Team</a>
+                    </li>
+                    <li class="menu-items-li">
+                        <a href="#">Make Enquiry</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-side-menu-content">
+                <button class="btn theme-btn">contact us</button>
+            </div>
+            <div class="mobile-toggler">
+                <img src="images/burger-toggler-icon.png" alt="toggler" onclick="toggleClass()">
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+
+        <!-- Slider Section -->
+        <div class="slider-section">
+            <div class="slider">
+                <img src="images/image1.png" alt="Image 1">
+                <img src="images/image2.jpg" alt="Image 2">
+
+            </div>
+            <div class="banner-content">
+                <p>Welcome To TenTwenty Farms</p>
+                <h1>From our Farms<br>to your hands</h1>
+            </div>
+            <div class="slider-controls">
+                <div class="thumbnails"></div>
+                <div class="slide-info">
+                    <span id="currentSlide">1</span>
+                    <img src="images/slide-num-line.png" alt="line">
+                    <span id="totalSlides"></span>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- Slider Section -->
+
+        <!-- Second Section -->
+        <div class="second-section">
+            <div class="heading-content">
+                <h1>Quality Products</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+
+            <div class="second-slider">
+
+                <div class="wrapper">
+                    <div class="carousel">
+                        <img src="images/image1.png" alt="img" draggable="false">
+                        <img src="images/image1.png" alt="img" draggable="false">
+                        <img src="images/image1.png" alt="img" draggable="false">
+                        <img src="images/image1.png" alt="img" draggable="false">
+                        <img src="images/image1.png" alt="img" draggable="false">
+                        <img src="images/image1.png" alt="img" draggable="false">
+                        <img src="images/image1.png" alt="img" draggable="false">
+                        <img src="images/image1.png" alt="img" draggable="false">
+                        <img src="images/image1.png" alt="img" draggable="false">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Second Section -->
+    </div>
+</body>
+
+
+<script src="js/main.js"> </script>
+<script src="js/secondslider.js"></script>
+
+<script>
+    function toggleClass() {
+        var divElement = document.getElementById("left-side-menu-content");
+        divElement.classList.toggle("active");
+    }
+</script>
+
+</html>

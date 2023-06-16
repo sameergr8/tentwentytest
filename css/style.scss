@@ -1,0 +1,242 @@
+$white: #ffffff;
+$black: #000000;
+$flexcontainter: flex;
+$lpadding: 0px;
+$header-margin: 20px;
+$flex-half: 50%;
+$textdecoration: none;
+$btn-border: 1px solid $black;
+$width-full: 100%;
+$m-auto: 0;
+
+
+body {
+  margin: $m-auto;
+  padding: $m-auto;
+}
+
+header {
+  background-color: $white;
+  margin: $header-margin;
+  padding: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+}
+
+.left-side-menu-content {
+  flex: $flex-half;
+}
+
+.right-side-menu-content {
+  flex: $flex-half;
+}
+
+.main-menu-content {
+  display: $flexcontainter;
+}
+
+.non-list-type {
+  padding-left: $lpadding;
+  list-style: none;
+}
+
+.menu-items-li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.menu-items-li a {
+  color: $black;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: $textdecoration;
+}
+
+.right-side-menu-content {
+  align-self: center;
+  text-align: right;
+}
+
+.theme-btn {
+  color: $black;
+  border: $btn-border;
+  background-color: $white;
+  padding: 10px 16px;
+
+}
+.mobile-toggler{
+  display: none;
+}
+
+//slider styles start
+.slider-section {
+  position: relative;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.thumbnails {
+  margin-top: 10px;
+
+}
+
+.thumbnail {
+  width: 93px;
+  height: 93px;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.thumbnail.hide {
+  display: none;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 67px;
+  left: 135px;
+  display: flex;
+  gap: 25px;
+}
+
+.slide-info {
+  color: $white;
+  align-self: center;
+}
+
+.slide-info span {
+  font-size: 16px;
+}
+
+.slide-info img {
+  vertical-align: middle;
+  margin: 0px 10px;
+}
+.banner-content{
+  position: absolute;
+    top: 50%;
+    left: 135px;
+    transform: translateY(-50%);
+}
+
+.banner-content h1{
+  font-size: 64px;
+  font-weight: 400;
+  color: $white;
+  margin: 0px;
+
+}
+.banner-content p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #EEF4F9;
+  margin: 0px;
+  padding-bottom: 24px;
+}
+
+
+
+
+//slider styles end
+
+
+//second section styles start
+.second-section {
+  padding: 150px 0px;
+}
+
+.heading-content {
+  text-align: center;
+  margin: 0 30%;
+}
+.second-slider{
+  margin-top: 100px;
+}
+
+.wrapper{
+  display: flex;
+  max-width: auto;
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: url(../images/dragicon.png), auto;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: url(../images/dragicon.png), auto;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 620px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+
+.carousel img.active {
+  transform: rotate(0deg) !important;
+}
+
+
+
